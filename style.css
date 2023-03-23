@@ -1,9 +1,17 @@
 /*
+
+ONLY FOLLOWING CORRECTLY
+
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+COLORS
+
+MAIN --> #087f5b
+GREY --> #343a40
 */
 
 * {
@@ -16,7 +24,10 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: sans-serif;
+  font-family: 'Inter',sans-serif;
+  color:#343a40;
+  border-bottom: 8px solid #087f5b;
+  border-top: 8px solid #087f5b;
 }
 
 .container {
@@ -31,6 +42,8 @@ section {
 
 h2 {
   margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5;
 }
 
 .grid-3-cols {
@@ -44,6 +57,7 @@ h2 {
 /* ------------------------ */
 
 /* HEADER */
+
 header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -57,29 +71,68 @@ header {
 
 h1 {
   margin-bottom: 24px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 .header-text {
   margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 img {
   width: 100%;
 }
 
+/* BUTTON */
+
+.btn:link,
+.btn:visited{
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.btn:hover,
+.btn:active {
+  background-color:#099268 ;
+}
+
+.btn--big{
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.btn--small{
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
 /* FEATURES */
+
 .features-icon {
 }
 
 .features-title {
   margin-bottom: 16px;
+  font-size: 20px;
 }
 
 .features-text {
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 /* TESTIMONIAL */
+
 .testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 24px;
+
 }
 
 .testimonial-box {
@@ -89,14 +142,17 @@ img {
 
 .testimonial-box h2 {
   margin-bottom: 24px;
+  font-size: 24px;
 }
 
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
+  font-weight: 1.7;
 }
 
 /* CHAIRS */
+
 .chair-box {
   padding: 24px;
 }
@@ -127,8 +183,11 @@ h3 {
 .chair-price {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 footer {
   margin-bottom: 48px;
+  font-size: 14px;
+  color: #252729;
 }
